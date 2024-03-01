@@ -7,3 +7,6 @@ I used the MLX 42 for this project as it was authorized in my campus :
 - [Link to the MLX42 github](https://github.com/codam-coding-college/MLX42)
 
 The program is divided in 3 parts :
+- Map checking (*.ber)
+- Map making
+- Commands & Events
