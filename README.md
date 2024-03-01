@@ -6,8 +6,15 @@ Small 2D game
 Check also my itch.io profile :
 - [itch.io](https://dailywind.itch.io/)
 
+
 I used the MLX 42 for this project as it was authorized in my campus :
 - [Link to the MLX42 github](https://github.com/codam-coding-college/MLX42)
+- 
+The MLX 42 naturally have leaks, you can suppress them with the following command when using valgrind
+```shell
+valgrind --suppressions="mlx42.supp" ./so_long <MAP PATH>
+```
+
 
 The program is divided in 3 parts :
 - Map checking (*.ber)
