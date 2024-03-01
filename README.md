@@ -14,7 +14,7 @@ The program is divided in 3 parts :
 - Map making
 - Commands & Events
 
-- ![](project_structure.PNG)
+  ![](project_structure.PNG)
 
   To use the program, you must do these commands :
 ```shell
