@@ -32,14 +32,14 @@ make
 ./so_long <MAP PATH>
 ```
 
-You also have these commands for cleaning the push_swap directory :
+You also have these commands for cleaning the so_long directory :
 ```shell
 # Clean all object files (*.o)
 make clean
 
-# Clean static library & object files
+# Clean executable & object files
 make fclean
 
-# Clean everything and recompile the static library
+# Clean everything and recompile the executable
 make re
 ```
