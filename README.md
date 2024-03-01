@@ -43,3 +43,5 @@ make fclean
 # Clean everything and recompile the executable
 make re
 ```
+ 
+  ![](prev.PNG)
