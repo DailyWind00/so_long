@@ -1,6 +1,7 @@
 # so_long ✅105/100
 Small 2D game
 
+This project make you use your first graphic library :
 - ![so_long subject](fr.so_long.subject.pdf)
 
 Check also my itch.io profile :
