@@ -24,7 +24,7 @@ The program is divided in 3 parts :
 
   ![](project_structure.PNG)
 
-  To use the program, you must do these commands :
+To use the program, you must do these commands :
 ```shell
 cd so_long
 make
