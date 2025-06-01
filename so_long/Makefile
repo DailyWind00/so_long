@@ -13,14 +13,19 @@
 NAME = so_long
 
 CFLAGS = -Wall -Wextra -Werror -Iinclude -g
-MLXFLAGS = ./MLX42/libmlx42.a -I./MLX42/include -ldl -lglfw -pthread -lm
+MLXFLAGS = ./MLX42/build/libmlx42.a -I./MLX42/include -ldl -lglfw -pthread -lm
 LDFLAGS = -Llib -lftprintf
 CC = cc
 
 SRC = $(wildcard *.c) $(wildcard checking/*.c) $(wildcard game/*.c)
 OBJ = $(SRC:.c=.o)
 
-all:		$(NAME)
+all:
+	@if ! test -d MLX42; then \
+		git clone https://github.com/codam-coding-college/MLX42.git; \
+	fi
+	cd MLX42 && cmake -B build && cmake --build build -j4
+	make $(NAME)
 
 %.o:		%.c
 			$(CC)  $(CFLAGS) -I./MLX42/include -c $< -o $@
@@ -32,10 +37,12 @@ $(NAME):	$(OBJ)
 clean:
 			cd lib; make clean
 			$(RM) -f $(OBJ)
+			$(RM) -rf MLX42/build
 
 fclean:		clean
 			cd lib; make fclean
 			$(RM) -f $(NAME)
+			$(RM) -rf MLX42
 
 re:			fclean all
 
